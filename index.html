@@ -46,15 +46,73 @@
             </p>
         </article>
     </section>
+
+<section id="habilidades"></section> 
+        <h2>Habilidades e tecnologia</h2>   
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Html</td>
+                    <td>Início</td>
+                    <td>Capaz de construit estruturas de páginas web semânticas e reponsivas</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediário</td>
+                    <td>Experiência com flexbox, grid e animações CSS</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
     <footer> <!--rodapé-->
         <p>Direitos reservados à Miriane</p>
     <section id="contato">
             <h2>Contato</h2>
             <p>Tem um projeto em mente? Entre em contato.</p>
+
             <address>
                 Email: <a href="mailto:mihriane@gmail.com">mihriane@gmail.com</a><br> <!--<br> dá quebra de linha-->
                 Telefone: <a href="tel:554799999999">47999999999</a>
             </address>
+
+            <form action="">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br> <!--required é campo obrigatório-->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br>
+                <label for="assunto">Assunto:</label>
+                <select type="assunto" id="assunto" name="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+            </form>
+
         </section>
     </footer>
 </body>
